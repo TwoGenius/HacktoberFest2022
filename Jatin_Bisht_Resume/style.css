@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.resume{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 60vw;
+    /* height: 100vh; */
+    margin-left: 2vw;
+    padding: 1vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px solid black;
+}
+.header{
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.image{
+    align-items: center;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+}
+.desc > a{
+    text-decoration: none;
+    color: rgb(255, 104, 4);
+}
+.desc > h3{
+    color: rgb(97, 97, 97);
+}
+.experience  a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
