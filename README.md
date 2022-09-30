@@ -1,6 +1,13 @@
 # Hacktoberfest 2022 `OPEN FIRST` Pull Request - `FREE T-SHIRT`🎉
+![image](https://user-images.githubusercontent.com/74475436/193330363-8c7eda7f-8975-433d-9627-4c0add6e16e4.png)
+
 ## Getting Started 🤩🤗:
 
+
+### Upload your landing page or resume page in a folder with `your name`.
+### Make the page using `HTML, CSS and/or JavaScript`.
+
+<br/>
 - Fork this repo (button on top)
 - Clone on your local machine
 
