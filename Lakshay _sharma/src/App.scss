@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600;800&family=Rampart+One&family=Righteous&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+}
+
+a,
+h2 {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+$bg : rgb(10, 10, 10);
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: $bg;
+
+    >img {
+        height: 100%;
+    }
+
+    >div {
+        // border: 1px solid red;
+        width: 100%;
+        margin-left: 2vmax;
+
+        >a {
+            margin: 2vmax;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+    }
+
+    >svg {
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+
+        & :hover {
+            color: rgb(212, 207, 207);
+        }
+    }
+}

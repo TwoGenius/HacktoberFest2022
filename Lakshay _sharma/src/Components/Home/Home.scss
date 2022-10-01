@@ -1,0 +1,137 @@
+$bg : rgb(10, 10, 10);
+
+.banner {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: $bg;
+    background-image: url(../../2018178.jpg);
+    background-repeat: no-repeat;
+
+
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $bg;
+        opacity: 0.3;
+    }
+
+    >img {
+        width: 500px;
+
+        margin-left: 50px;
+    }
+
+    >p {
+        color: white;
+        z-index: 10;
+        margin-left: 50px;
+        margin-top: 20px;
+        width: 40%;
+        font-weight: 300;
+        font-size: 1.2rem;
+        letter-spacing: 1.5px;
+        word-spacing: 2px;
+    }
+
+    >div {
+        display: flex;
+
+        button {
+            padding: 1rem;
+            z-index: 10;
+            border-radius: 5px;
+            margin: 1rem;
+            width: 150px;
+            margin-top: 30px;
+            font-size: 1.2rem;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            cursor: pointer;
+            // border: 1px solid #3498db;
+            background-color: transparent;
+            height: 50px;
+            width: 200px;
+            // color: #3498db;
+            color: white;
+            font-size: 1.5em;
+            box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: scale(1.1) translateY(-10px);
+            }
+
+            svg {
+                font-size: 1.7rem;
+                margin: 0 10px;
+            }
+        }
+    }
+
+}
+
+.row {
+    padding: 1rem;
+    background-color: $bg;
+
+    >h2 {
+        font-weight: 400;
+        margin: 0.3rem;
+    }
+
+    >div {
+        display: flex;
+        overflow-x: auto;
+
+
+    }
+}
+
+.card {
+    width: 170px;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.05) translateY(-10px);
+    }
+}
+
+.genrebox {
+    overflow-x: auto;
+    display: flex;
+    height: 100px;
+    background-color: $bg;
+
+
+    >a {
+        color: black;
+        background-color: white;
+        margin: 1rem;
+        transition: transform 0.5s;
+        min-width: 10rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: gray;
+            transform: scale(0.9);
+
+        }
+    }
+
+}
