@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+html { font-size: 110%; }
+html, body {
+  height: 100%; /* Fullscreen BG */
+  width: 100%;
+}
+body {
+  color: #394c4a;
+  font-family: 'Work Sans', helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h1 {
+  font-family: 'Unica One', cursive !important;
+  font-size: 3rem;
+}
+h2 {
+  font-family: 'Unica One', cursive !important;
+  font-size: 2.3rem;
+}
+h3 {
+  font-family: 'Unica One', cursive !important;
+  font-size: 1.8rem;
+}
+h4 {
+  color: #9da7a6;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+small {
+  line-height: 1;
+}
+a {
+  color: #29a598;
+  transition: background-color 0.2s ease-in-out,
+              color 0.2s ease-in-out;
+}
+a:focus,
+a:hover {
+  background-color: #29a598;
+  color: #fffefd;
+}
+hr {
+  border-color: #cdd1cf;
+  margin: 30px 0 60px;
+}
+
+/* =====================
+  Jumbotron Styles
+===================== */
+.jumbotron {
+  background: linear-gradient(rgba(255, 254, 253, 0.649), rgba(255, 254, 253, 0.731)), 
+  url("https://id-media.apjonlinecdn.com/magefan_blog/1000x500px_Best_hp_laptops_for_programming.jpg")
+   center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  min-height: 510px;
+  position: relative;
+  width: 100%;
+}
+.jumbotron .container {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.jumbotron .row {
+  padding-bottom: 45px;
+}
+.jumbotron .logo {
+  max-width: 150px;
+  width: 80%;
+}
+.jumbotron .title {
+  color: #29a598;
+}
+.jumbotron p {
+  margin: 0;
+}
+
+/* =====================
+  Containers
+===================== */
+section.row,
+footer.row {
+  padding: 0px 11px 65px;
+}
+/*** Modal ***/
+.modal-dialog.wide {
+  width: 90%;
+}
+.modal-dialog.wide .row {
+  margin: 0 0 30px;
+}
+.modal-dialog.wide .row .row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.modal-header {
+  border: none;
+  padding: 30px 30px 0;
+}
+.modal-header .close {
+  font-size: 2rem;
+}
+.modal-content {
+  background-color: #fffefd;
+  border: none;
+  box-shadow: 0 3px 6px rgba(8,33,30,0.2);
+}
+.modal-body {
+  padding: 30px;
+}
+.modal-body li {
+  margin-bottom: 9px;
+}
+.modal-footer {
+  padding: 30px 0 15px;
+}
+/* Fade Up Animation */
+.modal.fade .modal-dialog {
+  -webkit-transform: translate3d(0, 100vh, 0);
+  -ms-transform: translate3d(0, 100vh, 0);
+  transform: translate3d(0, 100vh, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.modal-backdrop {
+  background-color: #fffefd;
+  z-index: 1025;
+}
+.modal-backdrop.in {
+    opacity: 0.9;
+}
+
+/* =====================
+  Buttons
+===================== */
+.td-btn {
+  padding: 12px 36px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+}
+.td-btn + .td-btn {
+  margin-left: 6px;
+}
+.td-btn.small {
+  font-family: 'Work Sans', helvetica, sans-serif;
+  font-size: 0.7rem;
+  padding: 9px 15px 8px;
+}
+.outline {
+  background-color: transparent;
+  border: 1px solid #9da6a4;
+  color: #9da6a4;
+}
+.outline:focus,
+.outline:hover {
+  background-color: #9da6a4;;
+  color: #fffefd;
+}
+.outline.green {
+  border-color: #29a598;
+  color: #29a598;
+}
+.outline.green:focus,
+.outline.green:hover {
+  background-color: #29a598;
+  color: #fffefd;
+}
+.outline.white {
+  border-color: #fffefd;
+  color: #fffefd;
+}
+.outline.white:focus,
+.outline.white:hover {
+  background-color: #fffefd;
+  color: #df3778;
+}
+/* Navbar Contact Button */
+.navbar-nav .outline.pink {
+  border-color: #df3778;
+  color: #df3778;
+  margin: 20px 15px 0;
+  padding-top: 0;
+}
+.navbar-nav .outline.pink:focus,
+.navbar-nav .outline.pink:hover {
+  background-color: #df3778;
+  color: #fffefd;
+  text-decoration: none;
+}
+.menu-fixed .outline.pink {
+  margin-top: 11px;
+}
+/* Codepen and Github SVG Buttons */
+.iconBtn > img {
+  margin-right: 6px;
+  margin-top: -3px;
+  width: 18px;
+}
+.iconBtn:focus > img,
+.iconBtn:hover > img {
+  -webkit-filter: brightness(10);
+  filter: brightness(10);
+}
+
+/* Social Icons */
+.social {
+  display: inline-block;
+  transition: box-shadow 0.2s ease-in-out,
+              transform 0.2s ease-in-out;
+  height: 36px;
+  margin-left: 3px;
+  width: 36px;
+}
+.social:focus,
+.social:hover {
+  background-color: transparent;
+}
+.social + .social {
+  margin-left: 9px;
+}
+.social img {
+  max-width: 100%;
+}
+
+/* =====================
+  Icons and Images
+===================== */
+.icon {
+  max-height: 90px;
+}
+.icon + p { 
+  margin-top: 15px;
+}
+/* Profile Pic */
+.profile {
+  max-width: 180px;
+  padding: 0 15px 0 0;
+}
+/* Glyphicons */
+.glyphicon-heart {
+  color: #df3778;
+}
+
+/* =====================
+  Resume Modal
+===================== */
+#resumeModal h4 {
+  margin-top: 0;
+}
+.year {
+  text-align: right;
+}
+
+/* =====================
+  Portfolio Projects
+===================== */
+#projects .carousel-control {
+  background: none;
+  color: #fffefd;
+  font-size: 2rem;
+  margin-top: 150%;
+  opacity: 1;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  text-shadow: none;
+}
+#projects .carousel-control:focus,
+#projects .carousel-control:hover {
+  color: #29a598;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#projects .carousel-inner {
+  overflow: inherit;
+}
+#projects .carousel-inner img {
+  width: 100%;
+}
+#projects .carousel-caption {
+  bottom: inherit;
+  left: inherit;
+  position: relative;
+  right: inherit;
+  text-align: left;
+  text-shadow: none;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
+  color: #394c4a;
+  padding: 30px;
+}
+.card h3 {
+  margin-top: 0;
+}
+.card h4 {
+  font-size: 0.8rem;
+}
+#portfolio .carousel-indicators {
+  bottom: 0;
+  position: relative;
+}
+#portfolio .carousel-indicators li {
+  border-radius: 20px;
+  height: 15px;
+  width: 15px;
+}
+#portfolio .carousel-indicators li.active {
+  height: 17px;
+  width: 17px;
+}
+/*** Project Modals ***/
+.hero {
+  margin: 30px auto;
+  max-width: 900px;
+  width: 100%;
+}
+.label.tag {
+    background-color: #ffce3f;
+    border-radius: 0;
+    font-weight: normal;
+}
+/* To override button alignment in modals */
+.center {
+  text-align: center;
+}
+
+/* =====================
+  Other Styles
+===================== */
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-15 {
+  margin-bottom: 15px!important;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.bg-shadow {
+  box-shadow: 0 1px 3px rgba(8,33,30,0.5);
+}
+.bg-white {
+  background-color: #fffefd;
+  position: relative;
+}
+.bg-pink {
+  background-color: #df3778;
+  color: #fffefd;
+  position: relative;
+}
+.bg-star-y {
+  background: #ffce3f url(https://github.com/tiffanyadu/portfolio/blob/master/assets/imgs/yellow-star.png?raw=true) fixed;
+  background-size: 60px;
+  color: #fffefd;
+}
+.bg-star-g {
+  background: #29a598 url(https://github.com/tiffanyadu/portfolio/blob/master/assets/imgs/green-star.png?raw=true) fixed;
+  background-size: 60px;
+  color: #fffefd;
+}
+.bg-honeycomb {
+  background: #fffefd url(https://github.com/tiffanyadu/portfolio/blob/master/assets/imgs/honeycomb.png?raw=true) fixed;
+  background-size: 24px;
+}
+.gray {
+  color: #9da6a4;
+}
+.dashed {
+  border-top: 2px dashed rgba(255, 0, 0, 0.627);
+}
+/*** Contact Form ***/
+.checkbox {
+  display: none;
+}
+
+/* =====================
+  Media Queries
+===================== */
+@media (max-width: 1199px) {
+  /* Center class for medium screens */
+  .md-center { text-align: center; }
+}
+@media (max-width: 991px) {
+  /*** Resume ***/
+  .year {
+    text-align: left;
+  }
+  /*** Portfolio ***/
+  #projects .carousel-control {
+    margin-top: 300%;
+  }
+  #projects .carousel-inner img {
+    max-width: 480px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  /*** Page Elements ***/
+  section .row [class^="col-sm-"] + [class^="col-sm-"],
+  section .row [class*=" col-sm-"] + [class*=" col-sm-"] {
+    margin-top: 30px;
+  }
+  /*** Jumbotron ***/
+  .jumbotron .logo {
+    max-width: 120px;
+  }
+  /*** Mobile Nav ***/
+  .navbar-toggle {
+    height: 36px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+  }
+  .navbar-toggle .glyphicon {
+    color: #6b7a78;
+    top: -2px;
+  }
+  .navbar-default .navbar-toggle:focus,
+  .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+    border-color: #29a598;
+  }
+  .navbar-default .navbar-toggle .active {
+    color: #29a598;
+  }
+  .navbar-collapse {
+    background-color: #fffefd;
+    background-color: rgba(255,254,253,0.97);
+    border: none;
+    box-shadow: 0 2px 8px rgba(8,33,30,0.2);
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  .navbar-collapse .outline.pink {
+    margin: 15px auto 30px;
+    max-width: 150px;
+  }
+  /*** Portfolio ***/
+  #projects .carousel-control {
+    margin-top: 300%;
+  }
+  #projects .card {
+    text-align: center;
+  }
+}
