@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("https://i.postimg.cc/gJTVGvhr/blogbg.jpg");
+  background-attachment: fixed;
+}
+.blog-section {
+  width: 100%;
+}
+.blog-section .section-content {
+  width: 85%;
+  margin: 20px auto;
+}
+.blog-section .section-content .title {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+.blog-section .section-content .title h2 {
+  font-size: 50px;
+  color: rgb(190, 236, 22);
+  margin-top: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.blog-section .section-content .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin: 25px auto;
+}
+.blog-section .section-content .cards .card {
+  width: 100%;
+  position: relative;
+  border-radius: 100px;
+  transition: 0.4s;
+}
+.blog-section .section-content .cards .card:hover {
+  transform: scale(1.2);
+}
+.blog-section .section-content .cards .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 40px;
+}
+.blog-section .section-content .cards .card .article {
+  padding: 20px 20px;
+  border-radius: 70px;
+}
+.blog-section .section-content .cards .card .article h4 {
+  font-size: 30px;
+  color: rgb(63, 17, 226);
+}
+.blog-section .section-content .cards .card .article p {
+  font-size: 20px;
+  margin: 12px 3px;
+  background: transparent;
+  color: rgb(13, 243, 25);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+.blog-section .section-content .cards .card a {
+  text-decoration: none;
+  display: inline-block;
+  background: rgba(8, 42, 231, 0.764);
+  border-radius: 20px;
+  padding: 10px 2px;
+  margin-left: 25px;
+  color: rgb(32, 211, 56);
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+.blog-section .section-content .cards .card .posted-date p {
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  background: rgb(243, 234, 234);
+  color: rgb(33, 161, 18);
+  border-radius: 10px;
+}
+@media screen and (max-width: 770px) {
+  .blog-section .section-content .cards {
+    grid-template-columns: 1fr;
+  }
+}
