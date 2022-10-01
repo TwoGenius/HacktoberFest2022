@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #3e4aca;
+}
+
+.column {
+    width: 20%;
+    float: left;
+    padding: 10px 5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.2);
+    /* max-width: 300px; */
+    width: 300px;
+    margin: auto;
+    max-height: 400px;
+    min-height: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    max-height: 10px;
+    font-size: 3.2vmin;
+    /* min length set */
+}
+
+
+/* change by mmd--> adjusted mrgin to avoid content out of the card bound */
+
+.title {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding-top: 10px;
+}
+
+.a {
+    padding: 10px;
+}
+
+.set {
+    width: 1500px;
+    height: 1500px;
+    object-fit: fill;
+    border-radius: 19px;
+}
+
+.title {
+    color: gray;
+    font-size: 18px;
+}
+
+.fa-github {
+    padding: 10px;
+}
+
+.fa-instagram {
+    padding-right: 10px;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    width: 70%;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+a:hover,
+button:hover {
+    opacity: 0.6;
+}
+
+
+/* change by mmd--> adjusted mrgin to avoid content out of the card bound */
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: translate(-10px, -15px);
+    box-shadow: 4px 4px 2px blue;
+    /* opacity: .4; */
+    transition: .6s;
+}
