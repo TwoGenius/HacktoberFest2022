@@ -1,0 +1,379 @@
+/* header */
+#header .navbar{
+    height: 60px; 
+    font-family:  'Varela Round', sans-serif;
+}
+#header img{
+    height: 24px;
+}
+#header .collapse{
+    margin: auto;
+}
+#header .navbar-brand{
+     font-weight: 600;
+    font-size: 24px;
+}
+#header p{
+    vertical-align: middle;
+    margin: 5px;
+}
+#header .nav-link{
+    color: black;
+    margin-left: 10px;
+}
+#header span{
+    color: black;
+}
+
+h2{
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+/* about */
+#about {
+    background-color: #CFDAC8;
+    padding: 100px  50px 5px 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+#about span{
+    color:red;
+}
+#about h1{
+    font-size: 50px;
+    font-weight: 950;
+    line-height: 1.3;
+}
+#about h4{
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.2;
+
+}
+#about h6{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+#about a{
+   text-decoration: none;
+}
+#about .btn{
+     width:80%;
+     display: block;
+     margin: 0 10px;
+}
+
+/* skills */
+#skills{
+    background-color: #CFDAC8;
+    background-image: linear-gradient(180deg, #CFDAC8 0%,  #FFFFFF 100%);
+    padding: 40px 70px;
+}
+#skills .card{
+    padding:  10px 20px 10px 25px;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow:0 0  15px  rgba(0, 0, 0, 0.3);
+}
+#skills h4{
+    margin-bottom: 23px;
+    font-family:  'Varela Round', sans-serif;;
+    font-weight: 600;
+}
+#skills .skill{
+    margin-bottom: 8px;
+}
+#skills .col-2{
+    font-size: 25px;
+}
+#skills .col-10{
+    font-size: 17px;
+    font-weight: 499;
+}
+
+
+/* education */
+#education{
+    padding: 20px 50px 0 50px;
+    height: 450px;
+    /* background-color: #97BFB4; */
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #97BFB4 50%, #FFFFFF 100%);
+}
+#education .card{
+    text-align: center;
+    max-width: 400px;
+    height:300px ;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow:0 0  15px  rgba(0, 0, 0, 0.3);
+}
+#education  .carousel-control-prev-icon{
+    background-color: #3E8E7E;
+}
+#education  .carousel-control-next-icon{
+    background-color: #3E8E7E;
+}
+#education  .carousel-indicators{
+    position: absolute;
+    top:330px;
+}
+#education .college{
+     font-size: 25px;
+     font-weight: 750;
+     font-stretch: ultra-expanded;
+}
+#education .degree{
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+#education .spec{
+    font-size: 17px;
+    font-weight: 500;
+}
+#education .year{
+    font-size: 13px;
+    font-weight: 400;
+}
+#education .grade{
+    font-size: 16px;
+    font-weight: 550;
+}
+
+/* projects */
+#projects{
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #99A799 50%, #FFFFFF 100%);
+    padding: 35px 50px;
+}
+#projects .card{
+     border-radius: 20px;
+     padding: 0;
+     box-shadow:0 0  15px  rgba(0, 0, 0, 0.3);
+     background-color: #FFFFFF;
+     background-image: linear-gradient(180deg, #FFFFFF 40%, #FFFCDC 100%);
+     margin-top: 20px;
+}
+#projects img{
+    border-radius: 20px 20px 0 0;
+    margin: 0;
+}
+#projects .project-desc{
+     padding: 15px 20px 20px 20px;
+}
+#projects h6{
+    font-family:  Comic Sans MS;
+     font-size: 20px;
+     font-weight: 650;
+}
+#projects .col-6{
+  padding: 0;
+}
+#projects .btn{
+    width: 120px;
+    margin-left: 15px;
+}
+#projects a{
+    display: inline;
+   padding: 0;
+   margin:0;
+}
+
+/* experience */
+#experience{
+    padding: 45px 50px;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #99A799 50%, #FFFFFF 100%);
+}
+#experience .card{
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:0 0  15px  rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+#experience img{
+    margin: 0 auto;
+    height:150px;
+    width: 160px;
+    border-radius: 80px;
+}
+#experience p{
+   margin: 0;
+}
+#experience .exp{
+    padding: 0 20px 15px 20px;
+ }
+#experience .role{
+    font-family:  Comic Sans MS;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+#experience .company{
+    font-size: 17px;
+    font-weight: 620;
+}
+#experience .date{
+    font-size: 12px;
+}
+#experience .desc{
+    padding-top:8px ;
+}
+
+/* contact */
+#contact{
+    padding: 20px 150px 10px 150px;
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #b2beb5 100%);
+}
+#contact img{
+    height: 30px;
+}
+#contact p{
+    font-size: 13px;
+}
+#contact .col-6{
+    text-align: center;
+}
+
+/* footer */
+#footer{
+    text-align: center;
+    padding: 0;
+    font-size: 15px;
+    background-color: #b2beb5;
+}
+#footer p{
+    margin: 0;
+}
+
+
+@media (max-width:480px){
+
+    /* header */
+#header .navbar{
+    position: fixed;
+    top:0;
+    height: 60px;
+     
+}
+#header img{
+    height: 21px;
+}
+#header .navbar-brand{
+     font-weight: 750;
+    font-size: 20px;
+}
+#header p{
+    vertical-align: middle;
+    margin: 5px;
+}
+#header .nav-link{
+    color: black;
+    margin-left: 10px;
+}
+#header span{
+    color: black;
+}
+
+h2{
+    display: block;
+    margin: 10px 1px 1px 70px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+    /* about */
+#about {
+    padding: 60px  10px 5px 10px;
+}
+#about h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+#about h4{
+    font-size: 17px;
+}
+#about h6{
+    font-size: 14px;
+}
+#about .btn{
+     width:80%;
+     display: block;
+     margin: 0 auto;
+}
+
+   
+
+/* skills */
+#skills{
+    padding: 30px 8% 20px 8%;
+}
+#skills .card{
+    padding:  30px 20px;
+    margin-top: 20px;
+}
+ 
+/* education */
+#education{
+    padding: 40px 8% 10px 8%;
+    height: 450px;
+}
+#education h2{
+    margin-bottom: 30px;
+}
+
+#education .card{
+     max-width: 300px;
+}
+#education  .carousel-control-prev{
+    position: absolute;
+    left:-35px;
+    top:0;
+}
+#education  .carousel-control-next{
+    position: absolute;
+    left:300px;
+    top:0;
+
+}
+#education  .carousel-indicators{
+    position: absolute;
+    top:330px;
+}
+
+/* projects */
+#projects{
+    padding: 30px 8% 20px 8%;
+}
+#projects .card{
+    margin-top:20px;
+}
+
+/* experience */
+#experience{
+    padding: 30px 8% 20px 8%;
+}
+#experience .card{
+    margin-top:20px;
+}
+
+/* contact */
+#contact{
+    padding: 20px 18% 10px 18%;
+}
+
+/* footer */
+#footer{
+    font-size: 10px;
+}
+
+}
+
+
