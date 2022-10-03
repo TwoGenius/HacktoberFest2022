@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Dark Mode Switch -->
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+            <i class="fas fa-sun"></i>
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJETS</a>
+        <a href="#contacts">CONTACT</a>
+    </nav>
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title-group">
+            <h1>Welcome to my PortFolio</h1>
+            <!-- <h2></h2> -->
+        </div>
+        <!-- Card Section -->
+        <div class="containercard">
+            <div class="card">
+                <div class="imgcontainer">
+                    <img src="./img/PF2.png" alt="picture">
+                </div>
+                <div class="info">
+                    <h1 class="title">ANANT SINGH</h1>
+                    <h3>BTECH-CSE <br>
+                        3RD YEAR <br>
+                        DIT UNIVERSITY
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--About Section  -->
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="buttons">
+            <button class="primary">HTML</button>
+            <button class="secondary">CSS</button>
+            <!-- <button class="primary" disabled>Disabled</button> -->
+            <button class="outline">JavaScript</button>
+            <!-- <button class="secondary outline">Alt Outline</button> -->
+            <!-- <button class="outline" disabled>Disabled</button> -->
+        </div>
+        <div class="text-box" id="text-box">
+
+            <p>Hello,My name is Anant Singh.I am currently studying in DIT UNIVERSITY as a BTECH student from
+                Computer Science.This is my first portfolio website.Its not going to be my main one.This project is made
+                using HTML,CSS and JavaScript.Also I have added the functionality of Light and Light-Dark
+                Theme.Hope you enjoy it....
+
+            </p>
+        </div>
+    </section>
+
+    <!--Project Section  -->
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="about-container">
+            <div class="image-container">
+                <h2>Calculator</h2>
+                <a href="https://github.com/Anant-Singh1/Calculator_Dark_Light">
+                    <img src="./img/undraw_calculator_light.svg" alt="Proud Coder" id="image1">
+                </a>
+            </div>
+
+            <div class="image-container">
+                <h2>Youtube Clone</h2>
+                <a href="https://github.com/Anant-Singh1/Youtube-clone">
+                    <img src="./img/undraw_youtube_tutorial_light.svg" alt="Proud Coder" id="image2">
+                </a>
+            </div>
+
+            <div class="image-container">
+                <h2>Todo App</h2>
+                <a href="https://github.com/Anant-Singh1/Todo-App">
+                    <img src="./img/undraw_task_list_light.svg" alt="Proud Coder" id="image3">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section  -->
+    <section id="contacts">
+        <div class="social-icons">
+            <a href="https://github.com/Anant-Singh1">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://mobile.twitter.com/Anant__Singh_">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="http://">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://medium.com/@anantsingh7060">
+                <i class="fab fa-medium"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

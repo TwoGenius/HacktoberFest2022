@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "img",
+			"path": "..\\..\\JS PRO\\07 Light & Dark Mode\\07 Light _ Dark Mode\\055 -template-light-dark-mode\\ProLight-dark-mode\\img"
+		},
+		{
+			"name": "PortFolio1",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PortFolio1"
+	}
+}
