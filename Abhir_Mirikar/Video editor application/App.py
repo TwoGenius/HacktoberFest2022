@@ -1,4 +1,4 @@
-import tkinter as tk
+import tkinter as tk # App uses Tkinter. 
 from turtle import color, width
 from PIL import Image, ImageTk
 import cv2 as cv 
@@ -74,4 +74,4 @@ browse_btn.grid(column=1,row =1)
 browse_btn.bind("<Enter>",changecolor)
 browse_btn.bind("<Leave>",changecolor1)
 
-root.mainloop()
+root.mainloop() #Run the app until it is exited. 
