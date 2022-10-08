@@ -1,0 +1,21 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    width: 1200px;
+    margin: 50px;
+    position: relative;
+    left: 5%;
+    border: 1px solid black;
+}
+.outer-div{
+    width: 900px;
+    position: relative;
+    top: 0%;
+    left: 10%;
+    margin-bottom: 25px;
+}
