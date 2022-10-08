@@ -10,7 +10,7 @@ body {
 .column {
     width: 20%;
     float: left;
-    padding: 10px 5px;
+    padding: 11px 5px;
 }
 
 .row:after {
@@ -110,7 +110,7 @@ a {
 
 a:hover,
 button:hover {
-    opacity: 0.6;
+    opacity: 0.7;
 }
 
 
