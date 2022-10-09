@@ -1,0 +1,202 @@
+/* font-family: 'Arizonia', cursive;
+font-family: 'Chakra Petch', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+/* Navbar */
+
+.bg-nav{
+    background-color: #315EFF;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-item{
+    padding: 0.5rem 0;
+}
+
+.nav-link{
+    color: #00A3FF;
+    padding-right: 5rem;
+}
+
+
+.link-items{
+    text-decoration: none;
+    margin: 0 1.5rem;
+    color: #00A3FF;
+    transition-duration: 0.4s;
+}
+
+.link-items:hover{
+    color: white;
+}
+
+
+
+/* About me */
+
+#about-section{
+    padding: 14.1rem 5rem;
+    background-color: #00A3FF;
+    text-align: center;
+}
+
+.about-heading{
+    font-family: Arizonia, cursive;
+    font-size: 7rem;
+    color: white;
+}
+
+.about-content{
+    font-family: Ubuntu, sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    padding-top: 2rem;
+}
+
+/* Projects */
+
+#projects-section{
+    padding: 5rem;
+    text-align: center;
+}
+
+.projects-heading{
+    font-family: Chakra Petch, sans-serif;
+    color: #00A3FF;
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    text-align: left;
+}
+
+.projects-img{
+    width: auto;
+    height: 20rem;
+    padding-bottom: 5rem;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+.item-heading{
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+}
+
+.item-text{
+    font-family: Ubuntu, sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 35%;
+    top: 50%;
+    left: 32%;
+}
+
+
+/* Skills */
+
+#skills-section{
+    padding: 5rem;
+    background-color: #00A3FF;
+}
+
+.skills-heading{
+    font-family: Chakra Petch, sans-serif;
+    color: white;
+    font-size: 3rem;
+    padding-bottom: 7rem;
+}
+
+.skills-container{
+    display: grid;
+    grid-template: 5rem 5rem 5rem 5rem 5rem 5rem / 22rem auto 22rem 10rem;
+}
+
+.skill-item{
+    font-family: Ubuntu, sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Contact Section */
+
+#contact-section{
+    padding: 5rem;
+}
+
+.contact-heading{
+    font-family: Chakra Petch, sans-serif;
+    color: #00A3FF;
+    font-size: 3rem;
+    padding-bottom: 7rem;
+}
+
+.contact-content{
+    font-family: Ubuntu, sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.sub-content{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact-line{
+    padding-bottom: 5rem;
+}
+
+.contact-container{
+    display: grid;
+    grid-template: 2rem 3rem 3rem/ 10rem 30rem 10rem;
+    justify-content: space-between;
+}
+
+.contact-icon{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(207, 207, 207);
+}
+
+/* Footer section */
+
+#footer-section{
+    padding: 5rem;
+    background-color: #315EFF;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+.footer-icons{
+    size: 1.2rem;
+    color: #00A3FF;
+    border: #00A3FF;
+    border-style: solid;
+    border-radius: 100%;
+    padding: 0.5rem;
+    margin: 0 1.5rem;
+    transition-duration: 0.15s;
+}
+
+.footer-links{
+    text-decoration: none;
+}
+
+.footer-icons:hover{
+    color: white;
+    border: white;
+    border-style: solid;
+    border-radius: 100%;
+    transform: scale(1.15);
+}
+
+.copywright{
+    color: #00A3FF;
+    font-size: 0.7rem;
+    padding-top: 1rem;
+}
