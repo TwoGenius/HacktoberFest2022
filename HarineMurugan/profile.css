@@ -1,0 +1,54 @@
+#profileSection {
+    background-image: linear-gradient(pink, violet, purple);
+    position: relative;
+    height: 100%;
+}
+
+.about {
+    padding: 20px;
+    background: white;
+}
+
+.about-inner {
+    padding: 30px;
+    border: 1px solid rgba(20, 7, 36, 0.575);
+}
+
+.imageSection {
+    background-color: rgba(20, 7, 36, 0.575);
+    padding: 20px;
+}
+
+.descriptionSection {
+    margin-top: 20px;
+}
+
+.icons a i {
+    border: 1px solid rgba(20, 7, 36, 0.575);
+    border-radius: 50%;
+    color: black;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.height100 {
+    height: 100%;
+}
+
+.photo {
+    height: 200px;
+    width: 230px;
+}
+
+.textOnImage {
+    position: absolute;
+    color: white;
+    top: 199px;
+    left: 1002px;
+}
