@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background: #1b4d89;
+
+}
+.head{
+
+    background-color: #f9e45b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-align: center;
+    width: 250px;
+    margin: auto 660px;
+    color: black;
+    font-size: 2.3rem;
+}
+.box1,.box2,.box3{
+    width: 200px;
+    height: 190px;
+    margin: auto ;
+    float:left;
+}
+.box4,.box5,.box6{
+    width: 200px;
+    height: 190px;
+    margin: auto;
+}
+.box1{
+    color: white;
+    background-color: #77cf;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 10px 25%;
+}
+.box2{
+    color: black;
+    background-color: brown;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 10px 25%;
+}
+.box3{
+    color: darkviolet;
+    background-color: greenyellow;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 25%;
+}
+.box4{
+    background-color:rgb(255, 226, 10);
+    color:black;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 20px 65%;
+}
+.box5{
+    background-color: darkorchid;
+    color: bisque;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 20px 65%;
+}
+.box6{
+    background-color:lightseagreen;
+    color:black;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 20px 65%;
+}
+.cover{
+    min-height: 100vh;
+    color:#040481;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.075),rgba(0,0,0,0.05)) ,  url(./cover2.jpg) ; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+.test{
+    clear: both;
+    min-height: 100vh;
+    color: yellow;
+    font-size: 65px;
+    display: flex;
+    text-align:center ;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.35)) , url(./cover.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+}
