@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@600&family=Dancing+Script&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,700;1,800&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@600&family=Charis+SIL:wght@700&family=Dancing+Script&family=Kanit:ital,wght@1,600&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,700;1,800&family=Playfair+Display&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+.sidebar{
+    background-color:#CDF0EA;
+    /* width:434px; */
+    width: 200px;
+    font-family: 'Anek Malayalam', sans-serif;
+    height: 100vh;
+   transition: transform 0.3s ease-in-out;
+}
+.sidebar nav{
+    padding:45px;
+    height:20px;
+   
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 15px 0;
+    font-size: 25px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+.main{
+    /* background-color:cornflowerblue; */
+    width:90vw;
+    /* padding-left:60px; */
+    
+}
+.container{
+    display: flex;
+}
+.infoContainer{
+    /* background-color:lavender; */
+    height:50vh;
+    width:80vw;
+    margin:110px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Charis SIL', serif;
+}
+
+.Hello{font-size:50px;
+font-weight: lighter;
+font-family: 'Joan', serif;}
+
+.name{font-size:35px;
+font-weight: bold;}
+
+.about{font-size:30px;}
+
+.more-about{font-size:15px;
+margin-top:10px;}
+
+.buttons{margin-top:34px;}
+
+.buttons button{
+    padding:9px 14px;
+    border-radius: 20px;
+    color: white;
+    background-color:#47B5FF;
+    font-weight: bold;
+    font-size:15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    color: #47B5FF;
+    background-color:white;
+}
+.devImage img{
+   height: 358px;   
+}
+
+.contactform{
+    font-family: 'Charis SIL', serif;
+    padding:0 34px;
+    padding-top: 100px;
+}
+.contactform h1{
+    font-family: 'Anek Malayalam', sans-serif;
+    padding:10px 0;
+}
+.contactform form div{
+    padding:8px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width:26vw;
+    border-radius: 5px;
+    margin: 6px 0 0;
+    padding:3px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: brown;
+    margin: 0 5px;
+    padding-top: 3px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+
+    width: 24px;
+    padding-right: 3px;
+}
+.btn{
+    padding:8px 15px;
+    border-radius: 15px;
+    color: white;
+    background-color:#47B5FF;
+    font-weight: bold;
+    font-size:14px;
+    margin: 5px 2px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #47B5FF;
+    background-color:white;
+}
+.intro{ 
+    margin-left: 50px;
+}
+.cvContainer{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.cvContainer h1{
+    font-family: bold;
+}
+
+.cvitem{
+    margin:20px;
+    font-family: 'Playfair Display', serif;
+}
+.btn-sm{
+    font-size:10px;
+    padding:7px 13px;
+    margin:10px 0;
+}
+
+ h2{
+    margin: 15px;
+}
+
+.intro p{
+    margin: 15px;
+}
+
+.skillContainer{
+    padding:12px;
+}
+.skillItem
+{
+    font-family: 'Playfair Display', serif;
+    display:flex;
+    align-items:center;
+    font-weight: 700;
+}
+.skill{
+    height:5px;
+    border: 1px solid;
+}
+
+.hundred{
+    width: 250px;
+    background-color:chocolate;
+}
+.fifty{
+    width: 180px;
+    background-color:darkolivegreen;
+}
+.t5{
+    width: 105px;
+    background-color:blueviolet;
+}
+
+.myProject ul{
+    margin:20px;
+    font-size:20px;
+    list-style-type: none;
+}
+
+.sidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+@media (max-width: 800px){
+    /* *{
+        background-color:red;
+    } */
+
+    /* .sidebar{
+        transform: translate(-450px, 0px);
+        position: absolute;
+    } */
+   .sidebar{ position: absolute;} 
+
+    .devImage{
+        display: none;
+    }
+
+    button{
+        font-size: 10px;
+    }
+}
+
+.hamBurger{
+    position: absolute;
+    top:10px;
+    left:10px;
+    cursor:pointer;
+}
+.cross{
+    margin-left:110spx;
+
+}
+
+.myskillContainer{
+    font-size:25px;
+    font-weight:italic;
+    margin-top:40px;
+    margin-left: 80px;
+
+}
+hr{
+    margin-bottom:10px;
+}
+
+/* Make font style and sizes uniform
+and for making it responsive use em rather than px for font size */
