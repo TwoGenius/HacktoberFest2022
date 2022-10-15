@@ -1,0 +1,119 @@
+.left{
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid blue; */
+    left: 35px;
+    top: 20px;
+}
+.mid{
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    border: 2px solid rgb(97, 9, 82);
+    border-radius: 5px;
+}
+.right{
+    display: inline-block;
+    position: absolute;
+    /* border: 2px solid yellow; */
+    right: 35px;
+    top: 30px;
+}
+.nav li{
+    display: inline-block;
+    /* background-color: aqua; */
+}
+.nav li a{
+    color:  white;
+    text-decoration: none;
+    padding: 30px 20px;
+    font-size: 25px;
+    transition: all 0.5s ease;
+}
+.nav li a:hover{
+    color: aqua;
+    /* text-decoration: underline; */
+    /* transition: all 0.5s ease; */
+    outline: none;
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+    transition: all 0.5s ease;
+}
+.left img{
+    width: 102px;
+    height: 90px;
+}
+.left div{
+    text-align: center;
+}
+.right .bt{
+    
+    font-family: 'Playfair Display', serif;
+    margin: 0px 10px;
+    background-color: white;
+    color: black;
+    padding: 6px 12px;
+}
+.right .bt:hover{
+    background-color: aquamarine;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    margin: auto;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+  }
+
+  section .botton1 {
+ 
+    background: #fff;
+    color: #000;
+    width: 15%;
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .bt2:hover {
+    background: #00b894;
+    color: white;
+  }
+section h2{
+    width: 40%;
+    margin: 40px auto;
+}
+.id{
+    width: 30%;
+    margin: 90px auto;
+    font-size: 35px;
+    color: chartreuse;
+}
+section p{
+    width: 15%;
+    margin: auto;
+    font-size: 25px;
+    color: aquamarine;
+}
+.bt2{
+    display: block;
+    width: 15%;
+    margin: 30px auto;
+    background: #fff;
+    color: #000;
+    /* width: 15%; */
+    /* position: absolute; */
+    font-size: 22px;
+    text-align: center;
+    /* margin-bottom: 30px; */
+}
