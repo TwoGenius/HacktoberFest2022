@@ -69,7 +69,7 @@
  }
  .container1 {
      background-color: #27483f;
-     background: url(/d.png);
+     background: url(d.png);
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -199,7 +199,7 @@
      padding-top: 60px;
  }
  #register {
-     background: url(/bg3.png);
+     background: url(bg3.png);
      width: 500px;
      text-align: left;
      margin-left: 500px;
