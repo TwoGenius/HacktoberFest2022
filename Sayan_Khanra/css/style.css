@@ -1,0 +1,17 @@
+hr{
+    /* background-color: rgb(66, 160, 172); */
+    width: 20%;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: black;
+    border-width: 5px;
+}
+
+body{
+    background-color: #EAF6F6;
+    /* font-size: 18px; */
+}
+
+h1,h3{
+    color: #66BFBF;
+}
