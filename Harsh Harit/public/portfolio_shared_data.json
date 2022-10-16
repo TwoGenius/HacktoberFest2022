@@ -1,0 +1,83 @@
+{
+    "basic_info": {
+      "name": "Harsh Harit",
+      "titles": [ "Front-end Developer", "Software Engineer", "Flutter Developer", "Google Cloud Expert" ],
+      "social": [
+        {
+          "name": "github",
+          "url": "https://github.com/harshharit/",
+          "class": "fab fa-github"
+        },
+        {
+          "name": "linkedin",
+          "url": "www.linkedin.com/in/harshharit/",
+          "class": "fab fa-linkedin"
+        },
+        {
+          "name": "instagram",
+          "url": "https://www.instagram.com/harshharitt",
+          "class": "fab fa-instagram"
+        },
+        {
+          "name": "mail",
+          "url": "https://twitter.com/HarshHarit1",
+          "class": "fab fa-twitter"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "Flutter",
+          "class": "devicon-flutter-plain",
+          "level": "70"
+        },
+        {
+          "name": "GoogleCloud",
+          "class": "devicon-googlecloud-plain",
+          "level": "70"
+        },
+        {
+          "name": "Dart",
+          "class": "devicon-dart-plain",
+          "level": "70"
+        },
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+          
+        },
+      
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "85"
+        },
+        
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
+        },
+
+        {
+          "name": "Canva",
+          "class": "devicon-canva-plain",
+          "level": "70"
+        }
+      ]
+    }
+  }

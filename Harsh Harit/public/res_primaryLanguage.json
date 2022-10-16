@@ -1,0 +1,132 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "I'm Harsh Harit. I'm working with newest front-end frameworks like React and Bootstrap. I am a flutter developer and a google cloud platform expert.I work with languages like C++, Dart, Python, Javascript. This website has been created to show my projects and improve my programming skills . Thank You 💜",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "hobbies" : "Hobbies"
+      }
+    },
+    "projects": [
+      {
+        "title": "Venlo",
+        "startDate": "2021",
+        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application offers users to sell and buy used and old books.",
+        "images": [
+          "images/portfolio/venlo/p1.jpg",
+          "images/portfolio/venlo/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
+          },
+          {
+            "class": "devicon-dart-plain",
+            "name": "Dart"
+          },
+          {
+            "class": "devicon-mysql-plain",
+            "name": "Sql"
+          }
+        ]
+      },
+      {
+        "title": "SMART PARKING",
+        "startDate": "2020",
+        "description": "Atos InnoLab Internship. Created RESTFUL API microservices with Java Spring Boot and created a web page with Angular for Smart Parking.",
+        "images": [
+          "images/portfolio/carparking/p1.jpg",
+          "images/portfolio/carparking/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "Weather Forecasting App",
+        "startDate": "2019",
+        "description": "One of the first apps I was working on my internship. Weather application that provides real-time weather information of a location, such as Current temperature, and Chances of precipitation Also, it tells if it is going to be a sunny, cloudy, or rainy day ahead.",
+        "images": [
+          "images/portfolio/weather/p1.jpg",
+          "images/portfolio/weather/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-flutter-plain",
+            "name": "Flutter"
+          },
+          {
+            "class": "devicon-fastapi-plain",
+            "name": "FastAPI"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "Antrix Academy",
+        "title": "Junior Developer Intern",
+        "years": "7.2020 - 12.2020",
+        "mainTech": [
+          "Python"
+        ],
+        "technologies": [
+          "Data Analytics",
+          "Machine Learning",
+          "NumPy",
+          "PyCharm"
+        ]
+      },
+      {
+        "company": "Serros Solutions",
+        "title": "Flutter Developer Intern",
+        "years": "05.2021 - 08.2021",
+        "mainTech": [
+          "Flutter"
+        ],
+        "technologies": [
+          "Dart",
+          "App.Development"
+        ]
+      }
+    ],
+    
+    "hobbies":[
+      {
+        "name": "Video Games",
+        "icon":"mdi-sony-playstation"
+      },
+      
+      {
+        "name": "Music",
+        "icon":"mdi-music"
+      },
+      {
+        "name": "Badminton",
+        "icon" :"mdi-badminton"
+      },
+      {
+        "name": "Football",
+        "icon" :"mdi-soccer"
+      },
+      {
+        "name" : "Fitness",
+        "icon" : "mdi-weight-lifter"
+      }
+      
+    ]
+  }
