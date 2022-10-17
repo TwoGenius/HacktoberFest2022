@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased; 
+}
+
+body {
+    background-color: rgb(20, 19, 19);
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+#name {
+    color: white;
+    font-size: 35px;
+}
+
+#info {
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+x {
+    color: aqua;
+    font-size: 45px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about {
+    padding-left: 30px;
+    font-size: 25px;
+}
+.summary-text {
+    font-size: 21px;
+    padding: 30px;
+}
+
+#ach {
+    padding-left: 30px;
+    font-size: 25px;
+}
+.achievements {
+    font-size: 21px;
+    padding: 30px;
+}
+
+.sk {
+    padding-left: 30px;
+    font-size: 25px;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+.lang {
+    margin: 40px;
+}
+
+.web {
+    margin: 40px;
+}
+
+.dbms {
+    margin: 40px;
+}
