@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application de Gestion de Budget</title>
+    <script
+      src="https://kit.fontawesome.com/64a8b49a16.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gestion de Budget</h1>
+      <div class="budget__numbers">
+        <div id="earned" class="number">
+          <small>BUDGET</small>
+          <div class="amount__container">
+            <span id="amount__earned"> </span>
+            <p id="earned__symbol">FCFA</p>
+          </div>
+        </div>
+        <div id="available" class="number">
+          <small>SOLDE</small>
+          <div class="amount__container">
+            <span id="amount__available"></span>
+            <p id="available__symbol">FCFA</p>
+          </div>
+        </div>
+        <div id="spent" class="number">
+          <small>DEPENSE</small>
+          <div class="amount__container">
+            <span id="amount__spent"></span>
+            <p id="spent__symbol">FCFA</p>
+          </div>
+        </div>
+      </div>
+      <div class="input__area">
+        <input type="text" id="description" placeholder="Description" />
+        <input type="number" id="amount" placeholder="Montant" />
+      </div>
+      <div class="buttons__area">
+        <button id="add__income">Ajouter Revenu</button>
+        <button id="add__expense">Ajouter Depense</button>
+      </div>
+      <div class="items__container">
+        <div id="income__container" class="container">
+          <h2>Revenu</h2>
+          <!--<div class="item income">
+            <h4>Gains</h4>
+            <div class="item__income">
+              <span class="income__amount">200</span>
+              <p class="symbol">FCFA</p>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>-->
+        </div>
+        <div id="expenses__container" class="container">
+          <h2>Dépenses</h2>
+          <!--<div class="item expense">
+            <h4>Achats</h4>
+            <div class="item__expense">
+              <span class="expense__amount">200</span>
+              <p class="symbol">FCFA</p>
+            </div>
+            <i class="fa-solid fa-trash-can"></i>
+          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --red: #990303;
+  --green: #0bc8a5;
+  --blue: #0b1d8f;
+}
+
+body {
+  background-color: #f3e7ef;
+  font-family: "Andika New Basic", sans-serif;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+
+.budget__numbers {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  max-width: 700px;
+  margin: 1rem 0 3rem;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.amount__container {
+  display: flex;
+}
+
+#amount__earned,
+#earned__symbol {
+  color: var(--green);
+}
+#amount__spent,
+#spent__symbol {
+  color: var(--red);
+}
+#amount__available,
+#available__symbol {
+  color: var(--blue);
+}
+
+.input__area input {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input__area #description {
+  width: 310px;
+}
+
+.input__area #amount {
+  width: 90px;
+  text-align: center;
+}
+
+/* remove arrows from number input */
+.input__area input::-webkit-outer-spin-button,
+.input__area input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.buttons__area {
+  margin: 10px 0 3rem;
+}
+
+.buttons__area #add__income,
+.buttons__area #add__expense {
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+}
+
+#add__income {
+  background-color: var(--green);
+}
+#add__expense {
+  background-color: var(--red);
+}
+
+.items__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  max-width: 700px;
+}
+
+#income__container h2 {
+  color: var(--green);
+}
+#expenses__container h2 {
+  color: var(--red);
+}
+
+.items__container .container {
+  width: 49%;
+  border-radius: 15px;
+}
+
+.container .item {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px 5px 30px;
+  position: relative;
+}
+
+.item__income,
+.item__expense {
+  display: flex;
+}
+
+.income span,
+.income p {
+  color: var(--green);
+}
+.expense span,
+.expense p {
+  color: var(--red);
+}
+
+.item .fa-solid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: var(--red);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.item:hover .fa-solid {
+  animation: showDelete;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showDelete {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
