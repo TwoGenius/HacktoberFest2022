@@ -17,7 +17,7 @@ git clone https://github.com/fineanmol/Hacktoberfest2021.git
 ```
 - Navigate to project directory.
 ```
-cd Hacktoberfest2021
+cd Hacktoberfest2022
 ```
 
 - Create a new Branch
