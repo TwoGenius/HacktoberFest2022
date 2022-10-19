@@ -1,0 +1,966 @@
+/* font */
+/* basic */
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap");
+/*font-family: 'Akaya Kanadaka', cursive;*/
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Comfortaa:wght@300;400;500;600;700&display=swap");
+/*font-family: 'Comfortaa', cursive;*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*    font-family: 'Poppins', sans-serif;*/
+  font-family: "Comfortaa", cursive;
+}
+
+:root {
+  --mein-color: #ee5d2e;
+  --white: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ------------------------  background ------------------------------- */
+.wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  height: 525vh;
+  z-index: -99;
+}
+
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #eea42e;
+  background: transparent;
+}
+
+.box div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 10s infinite;
+}
+
+.box div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s infinite;
+}
+
+.box div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: animate 9s infinite;
+}
+
+.box div:nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 9s infinite;
+}
+
+.box div:nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s infinite;
+}
+
+.box div:nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s infinite;
+}
+
+.box div:nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s infinite;
+}
+
+.box div:nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s infinite;
+}
+
+.box div:nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s infinite;
+}
+
+.box div:nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s infinite;
+}
+
+.box div:nth-child(11) {
+  top: 30%;
+  left: 50%;
+  animation: animate 4s infinite;
+}
+
+.box div:nth-child(12) {
+  top: 40%;
+  left: 70%;
+  animation: animate 7s infinite;
+}
+
+.box div:nth-child(13) {
+  top: 42%;
+  left: 20%;
+  animation: animate 9s infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.3) translateY(-90px) rotate(36deg);
+    opacity: 0;
+  }
+}
+
+/*-------------------------------  nav start ------------------------- */
+
+.header {
+  padding: 12px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header::before {
+  /* ----- header background */
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.055);
+  box-shadow: 0 1px 32px 0 rgba(0, 0, 0, 0.144);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: -1;
+}
+
+.header .logo {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--mein-color);
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+
+.header .nav-toggler {
+  height: 34px;
+  width: 44px;
+  margin-right: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .nav-toggler.active {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transition: 0.5s;
+  transform: translateX(-200px);
+}
+
+/* ------------------- humburger button */
+.header .nav-toggler span {
+  height: 2px;
+  width: 30px;
+  display: block;
+  background-color: var(--white);
+  position: relative;
+}
+
+.header .nav-toggler span::before,
+.header .nav-toggler span::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.header .nav-toggler span::before {
+  transform: translateY(-8px);
+}
+
+.header .nav-toggler span::after {
+  transform: translateY(8px);
+}
+
+/*------------------------  nav in header */
+
+.header .nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.082);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  width: 280px;
+  height: 100%;
+  overflow-y: auto;
+  box-shadow: var(--shoadws);
+  padding: 80px 0 40px;
+  transition: transform 0.5s ease;
+  transform: translateX(100%);
+}
+
+.header .nav.open {
+  transform: translateX(0%);
+}
+
+.header .nav ul li a {
+  font-size: 25px;
+  color: var(--white);
+  padding: 10px 30px;
+  display: block;
+  text-transform: capitalize;
+  transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+  color: var(--mein-color);
+}
+
+/* ---------------------------- homePage -----------------------------------  */
+
+.homePage {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.homePage .container {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.PersonlichInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.PersonlichInfo .info {
+  padding: 0 50px;
+}
+
+.PersonlichInfo .info {
+  padding: 0 50px;
+}
+
+.PersonlichInfo .info h2 {
+  font-size: 55px;
+  color: var(--mein-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 0 0 40px 0;
+}
+
+.PersonlichInfo .info h3 {
+  color: var(--mein-color);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+.PersonlichInfo .info p {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* bild bearbeiten */
+.Pic img {
+  height: 100%;
+  width: 600px;
+}
+
+/* buttom  */
+.PersonlichInfo .mybtn {
+  margin-top: 20px;
+}
+
+.PersonlichInfo .mybtn a {
+  color: #fff;
+  display: inline-block;
+  border: 2px solid var(--mein-color);
+  padding: 5px 30px;
+  border-radius: 20px;
+  transition: 500ms;
+  text-transform: uppercase;
+}
+
+.PersonlichInfo .mybtn a:nth-child(2) {
+  margin-left: 30px;
+}
+
+.PersonlichInfo .mybtn a:hover {
+  box-shadow: 0px 0px 11px 0px var(--mein-color);
+}
+
+.PersonlichInfo .mybtn a:hover i {
+  color: var(--mein-color);
+}
+
+.PersonlichInfo .mybtn i {
+  padding: 0 2px;
+}
+
+/*---------------------  Skills start ---------------------------- */
+.skills-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* .skilsPic {} */
+.skills-tittle {
+  text-align: center;
+  position: absolute;
+  padding-top: 150px;
+}
+
+.skills-tittle h2 {
+  display: inline-flex;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  color: #fff;
+  font-weight: 600;
+  border-bottom: 2px solid orange;
+}
+
+.skilsPic img {
+  width: 500px;
+}
+
+.skilsPic,
+.skilsBar {
+  float: left;
+  width: 50%;
+}
+
+.progress-bar-container:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.progress-bar-container h2 {
+  margin: 0 20px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.progress-bar {
+  width: 70%;
+  height: 5px;
+  margin: 20px;
+  border: 1px solid #565656;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #f5a700;
+  border: none;
+}
+
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: #f5a700;
+  border-radius: 5px;
+  animation: progress 1500ms ease-in 1;
+}
+
+.skills-number {
+  color: #fff;
+  padding: 2px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.html {
+  width: 80%;
+}
+
+.css {
+  width: 70%;
+}
+
+.JavaScript {
+  width: 5%;
+}
+
+.Photoshop {
+  width: 40%;
+}
+
+.Illustrator {
+  width: 30%;
+}
+
+.Premiere {
+  width: 20%;
+}
+
+.MS-Office {
+  width: 50%;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+    opacity: 0.5;
+  }
+}
+
+/* -------------------------------------------- schul-info ------------------- */
+
+.schul-info {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  overflow: hidden;
+}
+
+.schul-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.schul-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.schul-3 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.schul-2 .line {
+  height: 200px;
+  width: 5px;
+  border-radius: 50px;
+  background-color: #ee5e2e77;
+}
+
+.schul-2 i {
+  padding: 10px 0;
+  color: #fff;
+}
+
+.Schul .box1 {
+  max-width: 500px;
+  margin: 20px;
+  color: #fff;
+}
+
+.Schul .box1 h5 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  line-height: 1.9;
+  font-size: 16px;
+  color: #eea42e;
+}
+
+.Schul .box1 h2 {
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 10px 0;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #ee5d2e;
+}
+
+.Schul .box1 h6 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Schul .box1 p {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* ------------------------------------------ about ----------------------------------------------------- */
+
+/*
+.about {
+    height: 100vh;
+}*/
+
+.about .AbouTitle {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.about .AbouTitle h2 {
+  font-size: 45px;
+  color: var(--mein-color);
+}
+
+.aboutInfo {
+  text-align: center;
+}
+
+.about .aboutInfo img {
+  width: 500px;
+  padding: 10px;
+}
+
+/* ---------------------------------------------------- myFooter --------------------------------------*/
+
+.myFooter {
+  position: relative;
+  bottom: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+}
+
+.myFooter .footerBox p {
+  color: var(--mein-color);
+  text-transform: capitalize;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.myFooter .footerBox a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.myFooter .footerBox,
+.myFooter .socialMedia {
+  width: 50%;
+  float: left;
+  padding: 20px 0;
+}
+
+.myFooter .socialMedia i {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.myFooter .socialMedia i:hover {
+  transform: scale(1.3);
+  color: var(--mein-color);
+}
+
+.sendMeBox a {
+  color: #fff;
+  display: inline-block;
+  border: 2px solid var(--mein-color);
+  border-radius: 20px;
+  font-size: 13px;
+  padding: 2px 10px;
+  transition: 500ms;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.sendMeBox a:hover {
+  background-color: var(--mein-color);
+  box-shadow: 0 0 23px 1px var(--mein-color);
+  color: #000;
+}
+
+/* 
+----------------------------------- Praktikum start ---------------------------*/
+.Pra {
+  height: 100vh;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.Praktikum h5 {
+  padding: 5px 0;
+  color: #eea42e;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.Praktikum h1 {
+  color: var(--mein-color);
+  font-size: 27px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 600px;
+  padding: 10px0;
+}
+
+.Pra-1,
+.Pra-2 {
+  width: 45%;
+  margin: 20px;
+  float: left;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+}
+
+.Pra-1 p {
+  padding: 5px 0;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.Pra-1 a {
+  font-size: 22px;
+  transition: all 500ms;
+  color: crimson;
+}
+
+.Pra-1 a:hover {
+  color: darkturquoise;
+}
+
+.Pra-2 p {
+  padding: 5px 0;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.Pra-2 .Pra-2Box {
+  padding: 30px 0;
+}
+
+/* ---------------------------------------------------- Mobile size ------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .wrapper {
+    height: 650vh;
+  }
+
+  .PersonlichInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Pic img {
+    width: 300px;
+  }
+
+  .PersonlichInfo .info {
+    padding: 10px;
+  }
+
+  .mobil {
+    padding: 0 10px;
+  }
+
+  .PersonlichInfo .info h2 {
+    font-size: 45px;
+    padding: 0 0 10px 0;
+  }
+
+  .PersonlichInfo .info h3 {
+    padding: 5px 0;
+  }
+
+  /* --------------  skills */
+  .skills-tittle {
+    display: none;
+  }
+
+  .skills-page {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skilsPic {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .skilsPic,
+  .skilsBar {
+    width: 70%;
+  }
+
+  .progress-bar-container h2 {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .progress-bar {
+    width: 80%;
+    margin: auto;
+  }
+
+  .skills-number {
+    color: #fff;
+    padding: 2px;
+    margin-top: 10px;
+  }
+
+  .Prak {
+    flex-direction: column;
+  }
+
+  /* ------------------------ schul-------- */
+
+  .Schul .box1 {
+    padding: 20px;
+  }
+
+  .Schul .box1 h2 {
+    font-size: 16px;
+  }
+
+  .schul-2 {
+    display: none;
+  }
+
+  .schul-info {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  .schul-3 {
+    position: relative;
+    margin-top: -200px;
+  }
+
+  /* ------------------------------------------ about ----------------------------------------------------- */
+
+  .about {
+    height: 100vh;
+  }
+
+  .about .AbouTitle {
+    text-align: center;
+    padding: 90px 20px 20px;
+  }
+
+  .about .AbouTitle h2 {
+    font-size: 45px;
+    color: var(--mein-color);
+  }
+
+  .aboutInfo {
+    text-align: center;
+  }
+
+  .about .aboutInfo img {
+    width: 300px;
+    padding: 10px;
+  }
+
+  a .about .aboutInfo .aboutbox2 {
+    padding: 40px;
+  }
+
+  .about .aboutInfo p {
+    padding: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+
+  /* ---------------------------------------------------- myFooter --------------------------------------*/
+
+  .myFooter {
+    padding: 20px;
+  }
+
+  .myFooter .footerBox,
+  .myFooter .socialMedia {
+    width: 100%;
+  }
+
+  /* praktikum-/Berufserfahrungen   ---------------------------------*/
+  .Pra-1,
+  .Pra-2 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .PersonlichInfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    height: 650vh;
+  }
+
+  .Pic img {
+    width: 400px;
+  }
+
+  .PersonlichInfo .info {
+    padding: 20px;
+  }
+
+  .mobil {
+    padding: 0 10px;
+  }
+
+  .PersonlichInfo .info h2 {
+    font-size: 40px;
+    padding: 0 0 10px 0;
+  }
+
+  .PersonlichInfo .info h3 {
+    padding: 5px 0;
+  }
+
+  /* --------------  skills */
+  .skills-page {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .skilsPic {
+    text-align: center;
+    max-width: 400px;
+  }
+
+  .skilsPic,
+  .skilsBar {
+    width: 100%;
+  }
+
+  .progress-bar-container:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .progress-bar-container h2 {
+    padding: 10px 40px;
+    font-size: 16px;
+  }
+
+  .progress-bar {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .skills-number {
+    color: #fff;
+    padding: 2px;
+    margin-top: 10px;
+  }
+
+  .skills-tittle {
+    display: none;
+  }
+
+  .myFooter {
+    padding: 20px;
+  }
+
+  .myFooter .footerBox,
+  .myFooter .socialMedia {
+    width: 100%;
+  }
+}
