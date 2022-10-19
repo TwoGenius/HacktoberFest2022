@@ -1,0 +1,69 @@
+.top-container{
+  background-color: #EAF6F6;
+font-family: 'Sacramento', cursive;
+}
+h1{
+  font-size: 625%;
+  color: #66BFBF;
+  line-height: 2;
+}
+h2{
+    color: #66BFBF;
+    font-weight : normal;
+}
+body
+{
+  margin: 0;
+  text-align:center;
+}
+.text{
+  padding-top: 100px;
+margin-top: 0;
+}
+.bottom-cloud{
+  position: absolute;
+
+}
+.top-cloud{
+  position: absolute;
+  margin-top: 20px;
+  right: 450px;
+}
+#lower-line{
+  padding-top :5px;
+  font-family: Merriweather, sans-serif;
+}
+h3{
+  width: 30%;
+  font-family: Merriweather,sans-serif;
+  color:#11999E;
+  margin:0 auto 0;
+}
+.profile-picture{
+  border-radius : 10%;
+}
+.skill-1{
+  width: 25%;
+
+  float: left;
+  padding-left: 30px;
+}
+.skill-2{
+
+  width: 25%;
+  float: left;
+  padding-left: 30px;
+
+}
+a{
+  color:#11999E;
+}
+.skills{
+  margin : 0 auto;
+  width : 50%;
+}
+.blck{
+  width: 400px;
+}
+.skill-row{
+}
