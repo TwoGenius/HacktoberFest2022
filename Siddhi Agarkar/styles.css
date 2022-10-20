@@ -1,0 +1,163 @@
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 60px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+          body{
+              background: linear-gradient(to bottom right, rgb(154, 224, 247), rgb(233, 252, 253));
+          }
+  
+          #hii{
+              font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              letter-spacing: 5px;
+              font-size: 35px;
+          }
+          #hi{
+              font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+              letter-spacing: 3px;
+          }
+  
+          .head{
+              display: flex;
+              flex-direction: row;
+              padding-left: 100px;
+              padding-right: 40px;
+              padding-bottom: 15px;
+              justify-content: space-around;
+              margin-top: 30px;
+  
+              position: relative;
+              animation-name: example;
+              animation-duration: 4s;        }
+  
+          @keyframes example {
+      0%   {background-color:rgb(234, 213, 217); left:-30px; top:0px;}
+      25%  {background-color:rgb(232, 244, 210); left: 0px; top:0px;}
+    
+  }
+          .snap{
+              border-radius: 50%;
+              box-shadow: 20px;
+              height: 190px;
+              width: 190px;
+          }
+          .picture{
+              margin-top: 30px;
+              display: flex;
+              float: right;
+              margin-right: 80px;
+          }
+  
+          .container{
+              margin-top: 30px;
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 40px;
+          }
+  
+          .row{
+              background-color: aliceblue;
+              opacity: 0.8;
+              border-radius: 25px;
+              margin-left: 40px;
+              margin-right: 40px;
+              margin-bottom: 20px;
+              padding-left: 30px;
+              padding-right: 30px;
+              padding-top: 10px;
+              padding-bottom: 20px;
+                  }
+    
+  
+          #text{
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+              font-style: italic;
+              line-height: 25px;
+          }
+          #top{
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+              letter-spacing: 2px;
+          }
+          .snap:hover{
+              width: 210px;
+              height: 210px;
+              transition: all 1s ease-out;
+              transition-timing-function: ease-out;
+          }
+  
+          .links{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+  
+          #btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-right: 11px;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  .footer{
+      background-color: #333;
+      color: aliceblue;
+      padding: 40px;
+  }
+  
