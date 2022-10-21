@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+hr {
+    border: 2px solid white;
+    width: 100px;
+}
+
+header {
+    margin-top: 1.5em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    clear: both;
+    overflow: auto;
+}
+
+.name {
+    font-size: 4em;
+    color: #18ba60;
+    font-weight: 900;
+    margin: 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 1em;
+}
+
+.navigation a {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em;
+    color: #ffffff;
+}
+
+.intro {
+    background: linear-gradient(90deg, rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 10em 0;
+    color: #ffffff;
+}
+
+.content-intro {
+    margin-top: 5em;
+    overflow: auto;
+}
+
+.content-intro h1 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content-intro span {
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    margin-top: 10px;
+}
+
+.button-intro {
+    padding 0.5em 2em;
+    margin-top: 1em;
+    background: #18ba60;
+    color: #ffffff;
+    font-weight: 400;
+    border: 2px solid #18ba60;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+}
+
+.button-intro:hover {
+    background: #ffffff;
+    color: #000000;
+    border: 2px solid #18ba60;
+}
+
+#about-me {
+    padding: 5em 0;
+    overflow: auto;
+}
+
+#about-me h4 {
+    color: #18ba60;
+}
+
+.content-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.col-narrow {
+    float: left;
+    overflow: hidden;
+    margin-top: 2em;
+    clear: both;
+    text-align: left;
+}
+
+.co-narrow h2, h3, p {
+    margin: 5px 0;
+}
+
+.col-wide {
+    width: 70%;
+    float: right;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 2em;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.social-icons a {
+    border-radius: 50%;
+    border: 1px solid #444444;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 40px;
+    color: #444444;
+    transition: all 0.2s ease-in;
+}
+
+.social-icons a:hover {
+    color: #18ba60;
+    border: 1px solid #18ba60;
+}
+
+#work {
+    padding: 5em 0;
+    background: linear-gradient(90deg,rgba(0,0,0,0.7), rgb(24,186,96)), url(images/code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    overflow: auto;
+}
+
+#contact-me {
+    padding: 5em 0;
+    overflow: auto;
+}
+
+.footer {
+    background: #000000;
+    padding: 5em 0;
+    color: #ffffff;
+    overflow: auto;
+}
+
+@media (max-width: 1170px) {
+    .col-wide {
+        width: 66%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .col-wide {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-wide {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-narrow {
+        text-align: center;
+        float: none;
+    }
+
+    .about-me {
+    padding: 2em 0;
+    }
+
+    .work {
+    padding: 2em 0;
+    }
+
+    .contact-me {
+    padding: 2em 0;
+    }
+
+    .footer {
+        padding: 2em 0;
+    }
+}
+
+@media (max-width: 425px) {
+   .intro {
+    padding: 5em 0;
+    }
+
+    .content-intro h1 {
+    margin-top: 1.5em;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    }
+
+    .navigation a {
+    font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+      .navigation a {
+        font-size: 10px;
+        padding: 0;
+        }
+}
+
+@media (max-width: 320px) {
+        .content-intro {
+        padding-top: 5em;
+        }
+}
