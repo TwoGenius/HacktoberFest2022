@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!----------------------------------Google Font Link---------------------------------->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Roboto:ital,wght@0,300;400;500;600;700;1,100&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!------------------------------Font Awesome Icon Link-------------------------------->
+
+    <script src="https://kit.fontawesome.com/8910b2d20d.js" crossorigin="anonymous"></script>
+
+    <title> Soumyadip-Portfolio</title>
+
+    <!--------------- CSS link ------------------>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        * {
+            font-family: 'Roboto', 'sans-serif';
+            margin: 0;
+            overflow-x: hidden;
+            /* overflow-y: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!------------------------------------------------------Topbar---------------------------------------------------------------->
+
+    <div class="Topbar">
+
+        <div class="left">
+            <a href="#intro" class="logo">DEV.</a>
+            <a href="#about" class="itemContainer">About</a>
+            <a href="#skills" class="itemContainer">Skills</a>
+            <a href="#contact" class="itemContainer">Contact</a>
+        </div>
+
+        <div class="right">
+            <i class="fa-solid fa-moon icon" id="moon-icon"></i>
+        </div>
+
+    </div>
+
+    <!-----------------------------------------------------------Intro------------------------------------------------------------>
+
+    <div class="Intro" id="intro">
+        <div class="intro-left">
+            <div class="imageContainer">
+                <img src="images/man.png" alt="pic-1">
+            </div>
+        </div>
+        <div class="intro-right">
+            <div class="wrapper">
+                <h1 class="heading">Hi There, I'm</h1>
+                <h2 class="name">Soumyadip Debnath</h2>
+                <h3 class="designation">A Web Developer and Content Writer</h3>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------------About------------------------------------------------------------>
+
+    <div class="About" id="about">
+        <div class="content">
+            <h3>
+
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit recusandae delectus
+                voluptatibus reprehenderit quas reiciendis ipsum! Accusamus, necessitatibus distinctio.
+            </h3>
+
+            <br>
+
+            <h3>
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa expedita recusandae a officia
+                labore voluptatum reprehenderit, architecto neque ea ut explicabo eveniet praesentium. Magnam
+                assumenda repellendus odio, dolor, odit, laborum minima architecto quos harum a amet accusantium
+                dicta voluptatum facere?
+            </h3>
+
+            <br>
+
+            <h3>
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, repudiandae? Illo explicabo
+                recusandae nemo sunt.
+            </h3>
+        </div>
+    </div>
+
+    <!------------------------------------------------------Skills------------------------------------------------------------------->
+
+    <div class="Skills" id="skills">
+
+        <div class="skillCard">
+
+            <div class="card-top">
+                <img src="images/coding.png" alt="">
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-code skill-font"></i>
+                </div>
+
+                <div class="skill-description">
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, perspiciatis.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skillCard">
+
+            <div class="card-top">
+                <img src="images/Web D.png" alt="">
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-laptop-code skill-font"></i>
+                </div>
+
+                <div class="skill-description">
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, perspiciatis.</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="skillCard">
+
+            <div class="card-top">
+                <img src="images/writing.png" alt="">
+            </div>
+
+            <div class="card-bottom">
+
+                <div class="skill-icon">
+                    <i class="fa-solid fa-pen-nib skill-font"></i>
+                </div>
+
+                <div class="skill-description">
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, perspiciatis.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------------------Contact------------------------------------------------------------------->
+
+    <div class="Contact" id="contact">
+        <div class="contact-me">
+            <div class="svg-image">
+                <img src="images/shake.svg" alt="">
+
+            </div>
+            <div class="text-message">
+                <div class="message-top">
+                    <h1 class="contact-heading">Contact Me</h1>
+                </div>
+                <div class="message-middle">
+                    <textarea name="" id="" cols="34" rows="12" placeholder="Write your message here"></textarea>
+                </div>
+                <div class="message-bottom">
+                    <button>Send</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram social-icon"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter social-icon"></i></a>
+            </div>
+            <div class="developer">
+                <span>Made by Soumyadip Debnath</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var icon = document.getElementById("moon-icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+
+</body>
+
+</html>
