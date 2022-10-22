@@ -1,0 +1,324 @@
+:root {
+    --primary-color: orangered;
+    --secondary-color: black;
+    --tertiary-color: white;
+}
+
+.dark-theme {
+    --primary-color: orangered;
+    --secondary-color: white;
+    --tertiary-color: black;
+}
+
+span {
+    color: var(--secondary-color);
+}
+
+/*-------------------------------------------- Topbar -------------------------------------------*/
+
+.Topbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: 550;
+    margin-right: 30px;
+    margin-left: 20px;
+}
+
+.itemContainer {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.icon {
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------------- Intro -------------------------------------------------*/
+
+.Intro {
+    background-color: var(--tertiary-color);
+    display: flex;
+    height: 538px;
+}
+
+.intro-left {
+    overflow: hidden;
+    width: 45%;
+}
+
+.imageContainer {
+    width: 500px;
+    height: 500px;
+    float: right;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: all 1s ease;
+}
+
+.imageContainer:hover {
+    transform: scale(0.9);
+    /* box-shadow: 0px 15px 0px -8px black; */
+}
+
+.intro-right {
+    width: 55%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.heading {
+    margin: 4px;
+    padding: 4px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.name {
+    margin: 4px;
+    padding: 4px;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.designation {
+    margin: 4px;
+    padding: 4px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+/*------------------------------------------------------- About -----------------------------------------------------*/
+
+.About {
+    width: 100%;
+    height: 609px;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.content {
+    margin: 161px 50px;
+    padding: 30px;
+    height: 203px;
+    overflow-y: hidden;
+    /* margin-top: 161px; */
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+.bullet-points {
+    height: 80%
+}
+
+/*--------------------------------------------------Skills-------------------------------------------------*/
+
+.Skills {
+    height: 609px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skillCard {
+    height: 390px;
+    width: 280px;
+    border-radius: 5px;
+    box-shadow: 0.8px 0.8px 0.8px 0.8px var(--secondary-color);
+    transition: all 1s ease;
+}
+
+.skillCard:hover {
+    transform: scale(1.1);
+}
+
+.card-top {
+    width: 100%;
+    height: 36%;
+    background-color: var(--tertiary-color);
+    overflow: hidden;
+}
+
+.card-bottom {
+    width: 100%;
+    height: 64%;
+
+}
+
+.skill-icon {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-description {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    text-align: center;
+}
+
+.skill-font {
+    height: 40px;
+    width: 40px;
+    margin-left: 8px;
+}
+
+/*----------------------------------------------Contacts--------------------------------------------------*/
+
+.Contact {
+    width: 100%;
+    height: 609px;
+    background-color: var(--tertiary-color);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.contact-me {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    overflow: hidden;
+}
+
+.svg-image {
+    width: 55%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text-message {
+    width: 45%;
+    height: 100%;
+}
+
+.message-top {
+    width: 100%;
+    height: 20%;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contact-heading {
+    color: var(--secondary-color);
+}
+
+.message-middle {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-bottom {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    height: 30px;
+    width: 60px;
+    margin-bottom: 5px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    width: 100%;
+    height: 25%;
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+
+.social-media {
+    width: 100%;
+    height: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    height: 45px;
+    width: 45px;
+    margin-top: 30px;
+    overflow: hidden;
+
+}
+
+.developer {
+    margin: 5px;
+    padding: 5px;
+    height: 48%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
