@@ -6,6 +6,18 @@ npm create astro@latest -- --template portfolio
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
 
+## Open in Gitpod
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/withastro/astro/tree/latest/examples/portfolio)
+
+### Open in codespaces 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro/tree/latest/examples/portfolio)
+
+###  Open in Codeanywhere
+
+ [![Open in Codeanywhere](https://codeanywhere.com/img/open-in-codeanywhere-btn.svg)](https://app.codeanywhere.com/#https://github.com/withastro/astro/tree/latest/examples/portfolio)
+
+
+
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 ![portfolio](https://user-images.githubusercontent.com/4677417/186189473-03dda103-65d3-4220-8b60-180ccaee5939.png)
